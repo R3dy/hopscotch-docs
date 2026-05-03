@@ -1,0 +1,18 @@
+{
+  "name": "hopscotch-docs",
+  "version": "1.0.0",
+  "description": "Technical documentation for the Hopscotch Adventures TTRPG platform",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": ["ttrpg", "documentation", "hopscotch"],
+  "author": "Royce",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

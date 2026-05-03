@@ -1,0 +1,241 @@
+/* ── Hopscotch Adventures — Obsidian Arcane Dark Theme ── */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --vp-font-family-base: 'Inter Tight', system-ui, -apple-system, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Canvas: cool obsidian surface ladder ── */
+  --vp-c-bg: #07070C;
+  --vp-c-bg-soft: #0E0E16;
+  --vp-c-bg-mute: #161624;
+  --vp-c-bg-alt: #1F1F32;
+
+  /* ── Sidebar & Nav ── */
+  --vp-sidebar-bg-color: #0A0A12;
+  --vp-nav-bg-color: rgba(7, 7, 12, 0.85);
+  --vp-local-nav-bg-color: #0A0A12;
+
+  /* ── Glass surfaces for cards ── */
+  --vp-c-bg-elv: #0E0E16;
+  --vp-c-bg-elv-up: #14142A;
+  --vp-c-bg-elv-down: #08081A;
+
+  /* ── Ink: cool high contrast ── */
+  --vp-c-text-1: #F4F2FF;
+  --vp-c-text-2: #B5B3CC;
+  --vp-c-text-3: #7A7895;
+  --vp-c-text-mute: #4A4860;
+
+  /* ── Brand: electric arcane violet ── */
+  --vp-c-brand-1: #8B5CF6;
+  --vp-c-brand-2: #A78BFA;
+  --vp-c-brand-3: #7C3AED;
+  --vp-c-brand-soft: rgba(139, 92, 246, 0.14);
+
+  /* ── Accent: cyan ambient ── */
+  --vp-c-accent-1: #5EEAD4;
+  --vp-c-accent-2: #34D399;
+  --vp-c-accent-3: #F0BB52;
+  --vp-c-accent-soft: rgba(94, 234, 212, 0.12);
+
+  /* ── Brand button ── */
+  --vp-button-brand-bg: #8B5CF6;
+  --vp-button-brand-hover-bg: #7C3AED;
+  --vp-button-brand-active-bg: #6D28D9;
+  --vp-button-brand-text: #F4F2FF;
+  --vp-button-brand-border: transparent;
+
+  /* ── Alt button ── */
+  --vp-button-alt-bg: #1F1F32;
+  --vp-button-alt-hover-bg: #2A2A44;
+  --vp-button-alt-text: #B5B3CC;
+  --vp-button-alt-border: rgba(139, 92, 246, 0.2);
+
+  /* ── Code blocks ── */
+  --vp-code-block-bg: #0B0B16;
+  --vp-code-block-divider-color: rgba(139, 92, 246, 0.2);
+  --vp-code-line-highlight-color: rgba(139, 92, 246, 0.1);
+  --vp-code-block-bg: #080812;
+  --vp-code-copy-code-bg: rgba(139, 92, 246, 0.08);
+  --vp-code-copy-code-hover-bg: rgba(139, 92, 246, 0.2);
+  --vp-code-copy-code-active-text: #A78BFA;
+
+  /* ── Borders ── */
+  --vp-c-border: #1A1A2E;
+  --vp-c-border-hard: #2A2A44;
+  --vp-c-divider: #1A1A2E;
+  --vp-c-gutter: #0E0E16;
+
+  /* ── Shadows ── */
+  --vp-shadow-1: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --vp-shadow-2: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* ── Custom properties ── */
+  --vp-custom-block-tip-bg: rgba(139, 92, 246, 0.08);
+  --vp-custom-block-tip-border: rgba(139, 92, 246, 0.3);
+  --vp-custom-block-tip-text: #C4B5FD;
+  --vp-custom-block-tip-code-bg: rgba(139, 92, 246, 0.15);
+
+  --vp-custom-block-info-bg: rgba(94, 234, 212, 0.06);
+  --vp-custom-block-info-border: rgba(94, 234, 212, 0.25);
+  --vp-custom-block-info-text: #5EEAD4;
+  --vp-custom-block-info-code-bg: rgba(94, 234, 212, 0.12);
+
+  --vp-custom-block-warning-bg: rgba(240, 187, 82, 0.07);
+  --vp-custom-block-warning-border: rgba(240, 187, 82, 0.3);
+  --vp-custom-block-warning-text: #F0BB52;
+  --vp-custom-block-warning-code-bg: rgba(240, 187, 82, 0.12);
+
+  --vp-custom-block-danger-bg: rgba(244, 63, 94, 0.07);
+  --vp-custom-block-danger-border: rgba(244, 63, 94, 0.3);
+  --vp-custom-block-danger-text: #F43F5E;
+  --vp-custom-block-danger-code-bg: rgba(244, 63, 94, 0.12);
+
+  --vp-custom-block-details-bg: #0B0B16;
+  --vp-custom-block-details-border: rgba(139, 92, 246, 0.2);
+  --vp-custom-block-details-text: #B5B3CC;
+  --vp-custom-block-details-code-bg: rgba(139, 92, 246, 0.08);
+
+  /* ── Links ── */
+  --vp-c-text-code: #8B5CF6;
+
+  /* ── Home hero ── */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #8B5CF6 0%, #5EEAD4 100%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #8B5CF6 30%, #5EEAD4 70%);
+  --vp-home-hero-image-filter: blur(80px);
+}
+
+/* ── Typography ── */
+
+/* Display / hero text in Cormorant Garamond */
+.vp-doc h1 {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+  color: #F4F2FF;
+}
+
+.vp-doc h2 {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  letter-spacing: -0.01em;
+  color: #B5B3CC;
+  border-top-color: rgba(139, 92, 246, 0.15);
+}
+
+.vp-doc h3 {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: #A78BFA;
+}
+
+/* Blockquotes styled as editorial pull-quotes */
+.vp-doc blockquote {
+  border-left: 3px solid rgba(244, 63, 94, 0.4);
+  background: linear-gradient(90deg, rgba(244, 63, 94, 0.05) 0%, transparent 100%);
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #B5B3CC;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Inline code */
+.vp-doc :not(pre) > code {
+  background: rgba(139, 92, 246, 0.12);
+  color: #C4B5FD;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+/* Tables */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc th {
+  background: rgba(139, 92, 246, 0.1);
+  color: #C4B5FD;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.vp-doc td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #1A1A2E;
+  font-size: 0.875rem;
+}
+
+.vp-doc tr:hover td {
+  background: rgba(139, 92, 246, 0.04);
+}
+
+/* Code blocks */
+.vp-doc div[class*="language-"] {
+  background: #080812;
+  border: 1px solid #1A1A2E;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar link active */
+.VPSidebarItem.is-active > .item .link {
+  color: #8B5CF6;
+}
+
+.VPSidebarItem.is-active > .item .link .text {
+  color: #A78BFA;
+}
+
+/* Nav title */
+.VPNavBarTitle .title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #F4F2FF;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07070C;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3A3A55;
+}
+
+/* Card-like custom block styling */
+.vp-doc .custom-block {
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* Strong/bold styling */
+.vp-doc strong {
+  color: #F0BB52;
+}
+
+/* Horizontal rule */
+.vp-doc hr {
+  border-color: rgba(139, 92, 246, 0.15);
+}
