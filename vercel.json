@@ -1,0 +1,6 @@
+{
+  "buildCommand": "NODE_OPTIONS='--max-old-space-size=4096' vitepress build",
+  "outputDirectory": ".vitepress/dist",
+  "framework": null,
+  "installCommand": "npm install"
+}
