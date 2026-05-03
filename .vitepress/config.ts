@@ -59,7 +59,7 @@ export default defineConfig({
         },
         {
           text: 'Combat',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: 'Combat (Scene)', link: '/data-model/combat' },
             { text: 'Combatant', link: '/data-model/combatant' },
@@ -73,7 +73,7 @@ export default defineConfig({
         },
         {
           text: 'Runtime',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: 'Asset References', link: '/data-model/asset-ref' },
             { text: 'Run State', link: '/data-model/run-state' },
